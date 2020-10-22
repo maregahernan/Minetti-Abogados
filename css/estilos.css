@@ -1,0 +1,176 @@
+@import url(banner.css);
+@import url(filosofia.css);
+@import url(areas.css);
+@import url(staff.css);
+@import url(contacto.css);
+
+:root{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background-image: url(../img/fondo2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+  
+    
+}
+
+#menu{
+    font-size: 40px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    display: none;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+}
+
+header{
+    width: 100%;
+    height: 50px;
+  /*   position: fixed; */
+   
+}
+
+.header-nav{
+    display:flex;
+    width: 100%;
+    height: 50px;
+    background-color:  rgba(0 , 0 , 0 , .8);
+ /*    justify-content: space-around; */
+    align-items: center;
+}
+
+      .header-img{
+          width: 50px;
+          height: 50px;
+          margin-left: 20px;
+          background-image: url(../img/logo.jpg);
+          background-position: center;
+          background-position-x: -3.5px;
+          background-size: cover;
+          /* position: fixed; */
+          border-radius: 50%;
+          justify-self: flex-start;
+
+          
+         
+      }
+      .header-ul{
+       display: flex;
+       width: 100%;
+       height: 100%;
+       list-style: none;
+       align-items: center;
+       justify-content: flex-end;
+      }
+
+      .header-ul li{
+        display: inline;
+        font-size: 17px;
+        
+      }
+
+      .header-ul li a{
+          
+          display: inline-block;
+          text-decoration: none;
+          color: #ffffff;
+          height: 100%;
+          padding: 15px;
+          transition: all .2s ease-in-out ;
+          
+
+      }
+
+      .header-ul li a:hover{
+
+        background-color: rgba(255, 255, 255, .5);
+        border-right: 10px solid #ffffff;
+        font-style: oblique;
+        /* color: rgba(148, 24, 24, 0.8); */
+        color:#000000;
+        font-weight: 600;
+        
+       
+
+      }
+
+@media screen and (max-width:700px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+    }
+
+        #menu{ 
+            display: inline-block;
+            position: absolute;
+        }
+
+        .header-nav{
+            transform: translate(-100%);
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+           
+        
+        }
+        .move{
+
+            transform: translate(0);
+            /* position: relative; */
+            height: 100vh;
+            width: 100%;
+            background: rgba(0, 0, 0, .9);
+            transition:transform .5s ease-in-out;
+           
+        }
+
+        .header-img{
+            display: inline-block;
+            position: relative;
+            background-position-x: -1px;
+
+        }
+
+        .header-ul{
+            flex-direction: column;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .header-ul li {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            border-bottom: 1px solid #ffffff;
+            
+           
+        }
+
+        .header-ul li a {
+            width: 50%;
+            font-weight: bolder;
+            font-size: 20px;
+            margin-left: 20px;
+            
+        }
+    }

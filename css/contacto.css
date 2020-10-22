@@ -1,0 +1,289 @@
+#contacto{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    background-color: rgba(0, 0, 0, .7);
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    padding-bottom: 20px;  
+}
+
+.contacto-titulo{
+    margin-bottom: 30px;
+    width: 90%;
+    height: 20%;
+    border-bottom: 5px solid rgb(160, 51, 51);
+    top: 0;
+}
+
+        .contacto-titulo h2{
+            color: #ffffff;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 50px;
+        }
+
+.contacto-container{
+    width: 100%;
+    height: 80%;
+    
+    display: flex;
+}
+
+    .contacto-datos{
+        width: 40%;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
+
+        .datos{
+            width: 100%;
+            display: flex;
+            margin-bottom: 40px;
+            box-sizing: border-box;
+        }
+        .datos i {
+            justify-self: flex-start;
+            margin: 0 30px;
+            font-size: 40px;
+            color: #ffffff;
+        }
+        .datos p {
+            font-size: 25px;
+            color: #ffffff;
+            align-self: center;
+            font-weight: bold;
+        }
+
+        .redes{
+            height: 400px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+            margin: 0;   
+        }
+            .redes-titulo{
+                margin-bottom: 30px;
+                width: 90%;
+                text-align: center;
+                
+            }
+            .redes-titulo h3{
+                font-size: 23px;
+                color: #ffffff;
+                padding-top: 10px;
+                border-top: 5px solid rgb(160, 51, 51);
+            }
+            .iconos{
+                width: 90%;
+                height: 50px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .redes a{
+                width: 60px;
+                height: 60px;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                outline: none;
+                text-decoration: none;
+                transition: all .3s ease-in;
+            }
+            .redes i{
+                margin: 0;
+                padding: 0;
+               
+            }
+
+            .redes a:hover{
+                background: rgba(255, 255, 255, .7);
+                border-radius: 50%;
+            }
+            .redes i:hover {
+                color: rgba(0, 0, 0, .7);
+                transition: all .3s ease-in;
+
+            }
+
+
+
+
+
+
+
+    .contacto-mail{
+        width: 60%;
+        border-left: 5px solid rgb(160, 51, 51);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .mail-titulo{
+            width: 100%;
+            height: 10%;
+        }
+
+        .mail-titulo h3 {
+            text-align: center;
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+
+
+
+
+
+        .mail-form{
+            width: 100%;
+            height: 90%; 
+        }
+
+        .mail-form form{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .mail-form form input, textarea{
+            margin-bottom: 30px;
+            width: 50%;
+        }
+        .mail-form form input, textarea:focus{
+            outline: none;
+        }
+
+        .mail-form form input{
+            height: 40px;
+            background-color:inherit;
+            color: #ffffff;
+            font-weight: bold;
+            border-bottom: 1px solid rgb(160, 51, 51);
+        }
+        .input{
+            border: none;
+        }
+
+        .mail-form form textarea{
+            background-color:inherit;
+            border: none;
+            max-width: 50%;
+            min-width: 50%;
+            height: 150px;
+            max-height: 230px;
+            min-height: 150px;
+            border: 1px solid rgb(160, 51, 51);
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .mail-form form textarea::placeholder{
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+
+
+        .mail-form form input::placeholder{
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 15px;
+            
+
+        }
+
+.send{
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid rgb(160, 51, 51);
+
+}
+
+
+
+
+@media screen and (max-width:1100px){
+    .contacto-mail{
+        width: 50%;
+    }
+    .contacto-datos{
+        width: 50%;
+    }
+    .mail-form form input, textarea{
+        width: 80%;
+    }
+    .mail-form form textarea{
+        max-width: 80%;
+    }
+}
+
+
+@media screen and (max-width:900px){
+    #contacto{
+        height: auto;
+    }
+    .redes{
+        height: 200px;
+    }
+
+    
+    .contacto-container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .contacto-mail{
+        width: 90%;
+        border-top: 5px solid rgb(160, 51, 51);
+        border-left: none;
+    }
+    .mail-titulo{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .contacto-datos{
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:450px){
+    .datos{
+        padding-left: 15px;
+    }
+    .datos p{
+        font-size: 20px;
+    }
+    .datos i {
+        margin:0 10px;
+    }
+    .mail-form form input, textarea{
+        width: 95%;
+    }
+    .mail-form form textarea{
+        max-width: 95%;
+    }
+}
+
+
+@media screen and (max-width:380px){
+    .datos p{
+        font-size: 18px;
+    }
+}

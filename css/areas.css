@@ -1,0 +1,128 @@
+#areas{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    flex-direction: column;
+    margin-bottom: 200px;
+   
+}
+
+
+.areas-titulo{
+    margin-bottom: 30px;
+    width: 90%;
+    border-bottom: 5px solid rgb(160, 51, 51);
+    top: 0;
+    
+    
+}
+
+            .areas-titulo h2{
+                color: #ffffff;
+                font-size: 40px;
+                float: right;
+                margin-top: 30px;
+            }
+
+
+
+.areas-container{
+    width: 100%;
+    height: calc(100vh - 100px);
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+        .areas-div{
+           
+            width: 250px;
+            height: 250px;
+            margin: 15px;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 15px solid #993333;
+            background-color: rgba(0, 0, 0, .8);         
+            box-shadow: 0 0 10px rgba(255 , 255, 255, .4);
+            /* border-radius: 10px; */
+        }
+        .div-titulo {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            text-align: center;
+        }
+                .div-titulo h3{
+                    font-size: 28px;
+                    color: #ffffff;
+                }
+
+        .div-lista{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to  bottom, rgb(153, 51, 51), #190a05);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transform: scale(0);
+            transition: .3s ease;
+            
+        }
+             
+
+                .div-lista ul li{
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 15px 10px ;
+                }
+
+        .areas-div:hover .div-lista{
+            transform: scale(1);
+        }
+
+
+
+
+
+@media screen and (max-width:1000px){
+    #areas{
+        height: auto;
+    }
+   .areas-container{
+       height: auto;
+   }
+}
+
+@media screen and (max-width:600px){
+   
+  
+
+   .areas-titulo{
+       width: 95%;
+   }
+
+   .areas-titulo h2{
+       font-size: 30px;
+   }
+}
+
+@media screen and (max-width: 400px){
+
+   .areas-div:nth-child(4){
+    margin-bottom: 30px;
+}
+
+}
+
